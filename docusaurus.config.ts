@@ -24,6 +24,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'u8621011', // Usually your GitHub org/user name.
   projectName: 'research-ai.cc', // Usually your repo name.
+  deploymentBranch: 'gh-pages', // 部署分支（建議用 gh-pages）
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
