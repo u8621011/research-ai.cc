@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Ted Chen',
+  title: 'Ted Chen @ 愛語言科技',
   tagline: 'AI 論文輔助研究 & 智慧流程顧問',
   favicon: 'img/l-favicon.png',
 
