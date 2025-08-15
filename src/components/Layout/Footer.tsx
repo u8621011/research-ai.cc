@@ -5,7 +5,7 @@ export default function Footer(): JSX.Element {
     <footer>
       <div className="footer-content">
         <div className="footer-links">
-          <a href="mailto:contact@example.com">Email</a>
+          <a href="mailto:ted@iyuyan.net">Email</a>
           <a href="https://lin.ee/Da2vS9D" target="_blank" rel="noopener noreferrer">Line</a>
           <a href="https://www.facebook.com/ted.aigc" target="_blank" rel="noopener noreferrer">Facebook 粉專</a>
           <a href="https://www.facebook.com/groups/631614079045059" target="_blank" rel="noopener noreferrer">臉書社團</a>
