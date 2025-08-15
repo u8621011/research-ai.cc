@@ -951,12 +951,24 @@ footer {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(79, 70, 229, 0.1) 100%) !important;
 }
 
-[data-theme='dark'] .about h2 {
-  color: var(--text-dark) !important;
+[data-theme='dark'] .about h2,
+[data-theme='dark'] section[id="about"] h2 {
+  color: #111827 !important;
 }
 
-[data-theme='dark'] .about-description {
-  color: var(--text-light) !important;
+[data-theme='dark'] .about h2 strong,
+[data-theme='dark'] section[id="about"] h2 strong {
+  color: #111827 !important;
+}
+
+[data-theme='dark'] .about-description,
+[data-theme='dark'] section[id="about"] p {
+  color: #374151 !important;
+}
+
+[data-theme='dark'] .about-description strong,
+[data-theme='dark'] section[id="about"] p strong {
+  color: #1e3a8a !important;
 }
 
 [data-theme='dark'] .about-link {

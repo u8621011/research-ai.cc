@@ -13,18 +13,18 @@
 .about h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: #111827;
 }
 
 .about h2 strong {
-  color: #1f2937;
+  color: #111827;
   font-weight: 600;
   background: transparent;
 }
 
 .aboutDescription {
   font-size: 1.125rem;
-  color: #6b7280;
+  color: #374151;
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
@@ -48,4 +48,29 @@
   gap: 1rem;
   text-decoration: none;
   color: #1e3a8a;
+}
+
+/* Dark mode styles */
+:global([data-theme='dark']) .about h2 {
+  color: #111827 !important;
+}
+
+:global([data-theme='dark']) .about h2 strong {
+  color: #111827 !important;
+}
+
+:global([data-theme='dark']) .aboutDescription {
+  color: #374151 !important;
+}
+
+:global([data-theme='dark']) .aboutDescription strong {
+  color: #1e3a8a !important;
+}
+
+:global([data-theme='dark']) .aboutLink {
+  color: #3b82f6 !important;
+}
+
+:global([data-theme='dark']) .aboutLink:hover {
+  color: #3b82f6 !important;
 }
