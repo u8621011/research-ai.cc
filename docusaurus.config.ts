@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Ted 的 AIGC 研究中心',
+  tagline: 'AI 論文輔助研究 & 智慧流程顧問',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://research-ai.cc',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'u8621011', // Usually your GitHub org/user name.
+  projectName: 'research-ai.cc', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -32,8 +32,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-TW',
+    locales: ['zh-TW'],
   },
 
   presets: [
@@ -73,22 +73,32 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      title: 'Research & Consulting — Ted Chen',
+      hideOnScroll: false,
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          to: '#research',
+          label: '精選案例',
+          position: 'right',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          to: '#articles',
+          label: '精選文章',
+          position: 'right',
+        },
+        {
+          to: '#about',
+          label: '關於我',
+          position: 'right',
+        },
+        {
+          to: '#service',
+          label: '服務預告',
+          position: 'right',
+        },
+        {
+          href: 'https://www.facebook.com/ted.aigc',
+          label: '粉專',
           position: 'right',
         },
       ],
@@ -97,46 +107,31 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Email',
+              href: 'mailto:contact@example.com',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Line',
+              href: 'https://lin.ee/Da2vS9D',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Facebook 粉專',
+              href: 'https://www.facebook.com/ted.aigc',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: '臉書社團',
+              href: 'https://www.facebook.com/groups/631614079045059',
+            },
+            {
+              label: 'YouTube',
+              href: 'https://www.youtube.com/@ted_aigc',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} 愛語言科技. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

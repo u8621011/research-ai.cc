@@ -1,0 +1,95 @@
+/* Service Preview Section */
+.servicePreview {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 80px 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.servicePreview::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: float 15s ease-in-out infinite reverse;
+}
+
+.serviceContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.serviceTag {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.servicePreview h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.serviceHighlight {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.serviceDescription {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  line-height: 1.8;
+}
+
+.serviceCta {
+  background: white;
+  color: #1e3a8a;
+  padding: 1.25rem 3rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.125rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.serviceCta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  text-decoration: none;
+  color: #1e3a8a;
+}
+
+.serviceNote {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .servicePreview h2 {
+    font-size: 1.75rem;
+  }
+
+  .serviceHighlight {
+    font-size: 1.25rem;
+  }
+}

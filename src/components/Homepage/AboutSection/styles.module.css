@@ -1,0 +1,51 @@
+/* About Section */
+.about {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  text-align: center;
+  padding: 60px 2rem;
+}
+
+.aboutContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.about h2 strong {
+  color: #1f2937;
+  font-weight: 600;
+  background: transparent;
+}
+
+.aboutDescription {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.aboutDescription strong {
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.aboutLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.aboutLink:hover {
+  gap: 1rem;
+  text-decoration: none;
+  color: #1e3a8a;
+}

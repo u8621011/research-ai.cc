@@ -1,0 +1,196 @@
+/* Articles Section */
+.articles {
+  background: white;
+  padding: 72px 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articlesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.articleCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E0E0E0;
+  width: calc(50% - 14px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.articleCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.articleCardImage {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  background: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  flex-shrink: 0;
+}
+
+.articleCardImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border: 1px solid #E0E0E0;
+  border-bottom: none;
+  transition: transform 0.3s ease;
+}
+
+.articleCard:hover .articleCardImage img {
+  transform: scale(1.02);
+}
+
+.articleCardContent {
+  padding: 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.articleTag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: inline-block;
+  padding: 4px 12px;
+  background: #1e3a8a;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.articleCard h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1f2937;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.articleCard p {
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.articleLink {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.articleLink:hover {
+  gap: 1rem;
+  text-decoration: none;
+  color: #1e3a8a;
+}
+
+/* Desktop responsive (1024px+) */
+@media (min-width: 1024px) {
+  .articleCard {
+    min-height: 380px;
+    max-height: 480px;
+    height: auto;
+  }
+}
+
+/* Tablet responsive (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .articlesGrid {
+    gap: 32px;
+    padding: 0 16px;
+  }
+
+  .articleCard {
+    width: 47%;
+    min-height: 340px;
+    max-height: 420px;
+    height: auto;
+  }
+
+  .articleCardImage {
+    max-height: 240px;
+  }
+
+  .articleCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .articleCard p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .articlesGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articleCard {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .articleCardImage {
+    max-height: 200px;
+  }
+}
