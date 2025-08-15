@@ -40,12 +40,18 @@
 }
 
 /* Global body and layout overrides */
-html, body {
+html {
+  background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 20%) !important;
+  min-height: 100vh !important;
+}
+
+body {
   font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif !important;
   line-height: 1.6 !important;
   color: var(--text-dark) !important;
   overflow-x: hidden !important;
-  background: linear-gradient(to bottom, #f0f9ff 0%, #ffffff 20%) !important;
+  background: transparent !important;
+  min-height: 100vh !important;
 }
 
 /* Remove all Docusaurus default margins and paddings */
@@ -55,6 +61,26 @@ main,
   background: transparent !important;
   padding: 0 !important;
   margin: 0 !important;
+  min-height: 100vh !important;
+}
+
+/* Ensure the page wrapper doesn't interfere */
+#__docusaurus {
+  background: transparent !important;
+}
+
+.container {
+  background: transparent !important;
+}
+
+/* Force background on all possible containers */
+.main-wrapper {
+  background: transparent !important;
+}
+
+/* Override any theme backgrounds */
+[data-theme='light'] {
+  --ifm-background-color: #f0f9ff !important;
 }
 
 /* Animations */
@@ -323,7 +349,7 @@ footer {
   right: -25%;
   width: 100%;
   height: 200%;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
   animation: float 20s ease-in-out infinite;
 }
 
