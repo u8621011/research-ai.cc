@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Ted Chen',
   tagline: 'AI 論文輔助研究 & 智慧流程顧問',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/l-favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
